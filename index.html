@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Нейросети для программирования</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #b3d9ff; /* Темнее голубой фон */
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: 
+                linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"><rect width="20" height="20" x="0" y="0" fill="%2300ff41" opacity="0.1"/><rect width="20" height="20" x="20" y="20" fill="%2300ff41" opacity="0.1"/></svg>');
+            color: #00ff41;
+            text-align: center;
+            padding: 2.5rem 1rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                linear-gradient(rgba(0, 255, 65, 0.1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 255, 65, 0.1) 1px, transparent 1px);
+            background-size: 20px 20px;
+            z-index: 0;
+        }
+
+	header h1 {
+   	 font-size: 2.2rem;
+   	 margin-bottom: 0.5rem;
+    	position: relative;
+    	text-shadow: 0 0 5px #0066ff; /* Синяя тень вместо зеленой */
+    	color: #0066ff; /* Синий цвет текста */
+	}
+
+	header p {
+  	  font-size: 1.1rem;
+   	 opacity: 0.9;
+   	 position: relative;
+   	 color: #3399ff; /* Добавьте эту строку - голубой цвет */
+	}
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .profile {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .profile-img {
+            max-width: 100%;
+            height: auto;
+            object-fit: contain;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            margin-bottom: 1.5rem;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            width: 300px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-card h3 {
+            color: #3a7bd5;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Новые стили для кнопок */
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+
+        .nav-btn {
+            background: #3a7bd5;
+            color: white;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s;
+            text-decoration: none;
+        }
+
+        .nav-btn:hover {
+            background: #2c5fb3;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #333;
+            color: white;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>РЕШЕНИЕ ЗАДАЧ ПО ПРОГРАММИРОВАНИЮ С ПОМОЩЬЮ НЕЙРОСЕТЕЙ</h1>
+        <p>Искусственный интеллект для разработчиков</p>
+    </header>
+
+    <div class="container">
+        <!-- Кнопки для навигации -->
+        <div class="nav-buttons">
+            <a href="page1.html" class="nav-btn">Нажми чтобы увидеть все проведённые мной эксперименты с нейросетями</a>
+        </div>
+
+        <h2 style="text-align: center; margin-bottom: 1.5rem;">Мои выводы:</h2>
+        <div class="services">
+            <div class="service-card">
+                <h3>Нейросети помогут сгенерировать без ошибок только простой код, ИИ пока ещё не способен решать сложные задачи</h3>
+                <p></p>
+            </div>
+            <div class="service-card">
+                <h3>Использование ИИ в простых задачах приводит к снижению времени на их решение, но точно не может учушить качество кода</h3>
+                <p></p>
+            </div>
+            <div class="service-card">
+                <h3>Нейросети пока ещё недостаточно хороши в программировании, поэтому я рекомендую традиционный способ решения задач</h3>
+                <p></p>
+            </div>
+        </div>
+
+        <div class="profile">
+            <img 
+                src="https://i.ibb.co/tw8qVRss/jcyjdf1213.png" 
+                alt="Моя фотография" 
+                class="profile-img"
+                onerror="this.src='https://via.placeholder.com/800x450'"
+            >
+            <h2>Выполнил Глушков Кирилл Вадимович</h2>
+            <p>ученик 10Е класса</p>
+        </div>
+    </div>
+</body>
+</html>
