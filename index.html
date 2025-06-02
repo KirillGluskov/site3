@@ -13,7 +13,7 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #b3d9ff; /* Темнее голубой фон */
+            background-color: #b3d9ff;
             color: #333;
             line-height: 1.6;
         }
@@ -43,20 +43,21 @@
             z-index: 0;
         }
 
-	header h1 {
-   	 font-size: 2.2rem;
-   	 margin-bottom: 0.5rem;
-    	position: relative;
-    	text-shadow: 0 0 5px #0066ff; /* Синяя тень вместо зеленой */
-    	color: #0066ff; /* Синий цвет текста */
-	}
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+            position: relative;
+            text-shadow: 0 0 5px #0066ff;
+            color: #0066ff;
+        }
 
-	header p {
-  	  font-size: 1.1rem;
-   	 opacity: 0.9;
-   	 position: relative;
-   	 color: #3399ff; /* Добавьте эту строку - голубой цвет */
-	}
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            position: relative;
+            color: #3399ff;
+        }
+        
         .container {
             max-width: 1000px;
             margin: 2rem auto;
@@ -105,13 +106,19 @@
             margin-bottom: 0.5rem;
         }
 
-        /* Новые стили для кнопок */
         .nav-buttons {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            align-items: center;
             gap: 1rem;
             margin: 2rem 0;
+        }
+
+        .button-row {
+            display: flex;
+            gap: 1rem;
             flex-wrap: wrap;
+            justify-content: center;
         }
 
         .nav-btn {
@@ -124,6 +131,7 @@
             font-size: 1rem;
             transition: background 0.3s;
             text-decoration: none;
+            text-align: center;
         }
 
         .nav-btn:hover {
@@ -142,6 +150,11 @@
             header h1 {
                 font-size: 1.8rem;
             }
+            
+            .nav-btn {
+                padding: 0.8rem 1rem;
+                font-size: 0.9rem;
+            }
         }
     </style>
 </head>
@@ -154,7 +167,17 @@
     <div class="container">
         <!-- Кнопки для навигации -->
         <div class="nav-buttons">
-            <a href="page1.html" class="nav-btn">Нажми чтобы увидеть все проведённые мной эксперименты с нейросетями</a>
+            <!-- Первая строка с одной кнопкой -->
+            <div class="button-row">
+                <a href="page1.html" class="nav-btn">Нажми чтобы увидеть все проведённые мной эксперименты с нейросетями</a>
+            </div>
+            
+            <!-- Вторая строка с тремя кнопками -->
+            <div class="button-row">
+                <a href="https://openai.com/" class="nav-btn">Ссылка на ChatGPT</a>
+                <a href="https://giga.chat/" class="nav-btn">Ссылка на GigaChat</a>
+                <a href="https://nicebot.ru/" class="nav-btn">Ссылка на NiceBot</a>
+            </div>
         </div>
 
         <h2 style="text-align: center; margin-bottom: 1.5rem;">Мои выводы:</h2>
@@ -181,7 +204,7 @@
                 onerror="this.src='https://via.placeholder.com/800x450'"
             >
             <h2>Выполнил Глушков Кирилл Вадимович</h2>
-            <p>ченик 10Е класса</p>
+            <p>Ученик 10Е класса</p>
         </div>
     </div>
 </body>
